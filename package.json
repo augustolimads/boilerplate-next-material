@@ -6,7 +6,8 @@
     "build": "next build",
     "start": "next start",
     "lint": "next lint",
-    "generate": "yarn plop --plopfile ./generators/plopfile.js"
+    "generate": "yarn plop --plopfile ./generators/plopfile.js",
+    "server": "json-server ./src/services/server.json --port 3333"
   },
   "dependencies": {
     "@material-ui/core": "^4.12.3",
@@ -16,6 +17,7 @@
     "@reduxjs/toolkit": "^1.6.2",
     "axios": "^0.24.0",
     "date-fns": "^2.26.0",
+    "json-server": "^0.17.0",
     "next": "12.0.4",
     "react": "17.0.2",
     "react-dom": "17.0.2",
