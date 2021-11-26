@@ -1,9 +1,15 @@
-import * as S from './styles'
+import { Typography } from "@material-ui/core";
+import { useStyles } from "./styles";
 
-const {{pascalCase name}} = () => (
-  <S.Wrapper>
-    <h1>{{pascalCase name}}</h1>
-  </S.Wrapper>
-)
+const {{pascalCase name}} = () => {
+  const { root } = useStyles();
+  return (
+    <div>
+      <Typography variant="h1" className={root}>
+        {{pascalCase name}}
+      </Typography>
+    </div>
+  );
+}
 
 export default {{pascalCase name}}
